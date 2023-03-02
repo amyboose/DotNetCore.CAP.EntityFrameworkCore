@@ -1,3 +1,21 @@
 <Project>
-
+  <PropertyGroup Label="Package">
+    <Product>DotNetCore.CAP.EntityFrameworkCore</Product>
+    <VersionPrefix>0</VersionPrefix>
+    <Version>0.1.$(VersionPrefix)</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/amyboose/DotNetCore.CAP.EntityFrameworkCore</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>EntityFramework extension for CAP</Description>
+    
+    <Authors>Egorov Denis</Authors>
+    <RepositoryUrl>https://github.com/amyboose/DotNetCore.CAP.EntityFrameworkCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+    
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
 </Project>
