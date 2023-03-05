@@ -24,16 +24,6 @@ jobs:
     - name: Pack
       run: dotnet pack -c Release -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg -p:VersionPrefix=${{ github.run_number }} -o \nupkg
       if: github.ref == 'refs/heads/master'
-    - name: Files
-      run: cd \nupkg && ls && cd ..
-    - name: Files2
-      run: cd \nupkg && ls && cd ..
-    - name: Step 1 - Echo out a GitHub Actions Secret to the logs
-      run: |
-        echo "The GitHub Action Secret will be masked:  "
-        echo ${{ secrets.LOCAL_NUGET_KEY }}
-        echo "Trick to echo GitHub Actions Secrets:  "
-        echo ${{ secrets.LOCAL_NUGET_KEY }} | sed 's/./& /g'
     - name: Push RC
       run: dotnet nuget push \nupkgrc/*.nupkg -k ${{ secrets.LOCAL_NUGET_KEY }} -s https://seq.bossa-nova-server.website/v3/index.json
       if: github.ref == 'refs/heads/develop'
