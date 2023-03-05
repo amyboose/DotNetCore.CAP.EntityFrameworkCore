@@ -8,7 +8,6 @@ using DotNetCore.CAP.Transport;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
-using TestCAP.Persistance;
 
 namespace DotNetCore.CAP.EntityFrameworkCore.Internal;
 

@@ -2,10 +2,10 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using DotNetCore.CAP;
+using DotNetCore.CAP.EntityFrameworkCore;
 using DotNetCore.CAP.EntityFrameworkCore.Interceptors;
 using DotNetCore.CAP.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using TestCAP.Persistance;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection;

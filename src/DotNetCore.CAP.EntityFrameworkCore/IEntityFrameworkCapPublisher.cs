@@ -1,7 +1,6 @@
-﻿using DotNetCore.CAP;
-using DotNetCore.CAP.EntityFrameworkCore.Persistance;
+﻿using DotNetCore.CAP.EntityFrameworkCore.Persistance;
 
-namespace TestCAP.Persistance;
+namespace DotNetCore.CAP.EntityFrameworkCore;
 
 public interface IEntityFrameworkCapPublisher : ICapPublisher
 {
