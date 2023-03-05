@@ -26,9 +26,11 @@ jobs:
       if: github.ref == 'refs/heads/master'
     - name: Files
       run: cd \nupkg && ls && cd ..
+    - name: Files2
+      run: cd \nupkg && ls && cd ..
     - name: Push RC
       run: dotnet nuget push \nupkgrc\*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
       if: github.ref == 'refs/heads/develop'
     - name: Push
-      run: dotnet nuget push /nupkg/DotNetCore.CAP.EntityFrameworkCore.0.1.14.nupkg -k oy2kthtfsvt3hf3lo3yqr5tz2kehhmzehfmokb2jlu74vy -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push \nupkg/DotNetCore.CAP.EntityFrameworkCore.0.1.15.nupkg -k oy2kthtfsvt3hf3lo3yqr5tz2kehhmzehfmokb2jlu74vy -s https://api.nuget.org/v3/index.json
       if: github.ref == 'refs/heads/master'
