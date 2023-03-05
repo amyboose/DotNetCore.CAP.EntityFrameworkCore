@@ -8,7 +8,6 @@ jobs:
   nuget:
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'pull_request' }}
-    needs: build
     steps:        
     - uses: actions/checkout@v3
     - name: Setup dotnet
