@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.CAP.EntityFrameworkCore", "src/DotNetCore.CAP.EntityFrameworkCore\DotNetCore.CAP.EntityFrameworkCore.csproj", "{D97EE563-70FF-48BC-9129-7478D20585F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.CAP.EntityFrameworkCore", "src\DotNetCore.CAP.EntityFrameworkCore\DotNetCore.CAP.EntityFrameworkCore.csproj", "{D97EE563-70FF-48BC-9129-7478D20585F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69BC0FB7-5339-4D78-BFE7-B6C36AC0ADF9}"
 EndProject
@@ -14,7 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{22422142-6727-4D36-AC08-22F52C5C9D1C}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
-		LICENSE.txt = LICENSE.txt
+		dotnet.yml = dotnet.yml
+		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
