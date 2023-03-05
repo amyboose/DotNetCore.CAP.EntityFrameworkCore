@@ -27,8 +27,8 @@ jobs:
     - name: Files
       run: cd \nupkg && ls
     - name: Push RC
-      run: dotnet nuget push \nupkgrc/*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push \nupkgrc\*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
       if: github.ref == 'refs/heads/develop'
     - name: Push
-      run: dotnet nuget push \nupkg/*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push \nupkg\*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
       if: github.ref == 'refs/heads/master'
