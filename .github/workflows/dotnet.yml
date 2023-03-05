@@ -38,5 +38,5 @@ jobs:
       run: dotnet nuget push \nupkgrc/*.nupkg -k ${{ secrets.LOCAL_NUGET_KEY }} -s https://seq.bossa-nova-server.website/v3/index.json
       if: github.ref == 'refs/heads/develop'
     - name: Push
-      run: dotnet nuget push \nupkg/*.nupkg -k Ac2IfIhd3e$X -s https://seq.bossa-nova-server.website/v3/index.json
+      run: dotnet nuget push \nupkg/*.nupkg -k ${{ secrets.LOCAL_NUGET_KEY }} -s https://seq.bossa-nova-server.website/v3/index.json
       if: github.ref == 'refs/heads/master'
